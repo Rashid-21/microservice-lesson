@@ -1,6 +1,7 @@
 package com.company.linkedinlearning.repo;
 
 import com.company.linkedinlearning.domain.TourPackage;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
@@ -11,7 +12,6 @@ import java.util.Optional;
 /**
  * Tour Package Repository Interface
  */
-
 @RepositoryRestResource(collectionResourceRel = "package",path = "package")
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
 
